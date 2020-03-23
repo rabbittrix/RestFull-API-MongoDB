@@ -1,0 +1,31 @@
+### acessando via GET
+GET http://localhost:3000/users
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Bom Gosto",
+  "price": "25.00"
+}
+###
+PUT http://localhost:3000/users/5e6e0b0ca1f5141b90d55cc9
+Content-Type: application/json
+
+{
+  "name": "Claudia",
+  "email": "claudia@marvel.com",
+  "password": "123456",
+  "gender": "Female"
+}
+###
+DELETE http://localhost:3000/users/5e6e2357a1f5141b90d55cd1
+###
+PATCH  http://localhost:3000/users/5e6e0b0ca1f5141b90d55cc9
+Content-Type: application/json
+
+{
+  "name": "Jessica",
+  "password": "123456",
+}
+###
